@@ -1,0 +1,3 @@
+// CHANGE MONEY
+
+export const CHANGE_MONEY = 'CHANGE_MONEY';

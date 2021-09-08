@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+import {
+  Route, BrowserRouter
+} from 'react-router-dom';
+import { GlobalStyle } from './assets/styled';
+import NavbarComp from './components/Navbar';
+import Home from './pages/Home';
+import SendMoney from './pages/SendMoney';
+export class App extends Component {
+  render() {
+    return (
+      <>
+        <GlobalStyle />
+        <BrowserRouter basename="/" >
+          <Route exact path="/" component={Home} />
+          <Route path="/SendMoney" component={SendMoney} />
+        </BrowserRouter>
+      </>
+    )
+  }
 }
 
-export default App;
+
+export default App
