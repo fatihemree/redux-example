@@ -3,7 +3,6 @@ import {
   Route, BrowserRouter
 } from 'react-router-dom';
 import { GlobalStyle } from './assets/styled';
-import NavbarComp from './components/Navbar';
 import Home from './pages/Home';
 import SendMoney from './pages/SendMoney';
 export class App extends Component {
