@@ -14,7 +14,7 @@ export class Home extends Component {
             <>
                 <NavbarComp title='Home' />
                 <Page>
-                    
+                    home
                 </Page >
             </>
         )

@@ -5,7 +5,7 @@ import { Page } from '../assets/styled'
 import { changeMoney } from '../store/actions'
 import NavbarComp from '../components/Navbar'
 
-export class SendMoney extends Component {
+export class TodosDetail extends Component {
     static propTypes = {
         prop: PropTypes.object.isRequired
     }
@@ -13,7 +13,7 @@ export class SendMoney extends Component {
     render() {
         return (
             <>
-            <NavbarComp title='Send Money' />
+            <NavbarComp title='Todos Detail' />
             <Page>
             </Page>
             </>
@@ -29,4 +29,4 @@ const mapDispatchToProps = {
 changeMoney
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SendMoney)
+export default connect(mapStateToProps, mapDispatchToProps)(TodosDetail)

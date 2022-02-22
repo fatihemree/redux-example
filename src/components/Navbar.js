@@ -10,10 +10,10 @@ export default function NavbarComp(props) {
             <h4>{props.title}</h4>
             <div className="link">
                 < Link to='/' >Home</ Link>
-                < Link to='/SendMoney' > SendPage</ Link>
+                < Link to='/todosDetail' > SendPage</ Link>
             </div>
         </Navbar>
-    )
+    );
 }
 NavbarComp.prototype = {
     title: PropTypes.string.isRequired
