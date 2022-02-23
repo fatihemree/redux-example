@@ -5,7 +5,16 @@ import {
 import { GlobalStyle } from './assets/styled';
 import Home from './pages/Home';
 import TodosDetail from './pages/TodosDetail';
+import 'antd/dist/antd.css';
+import {FIREBASE_URL} from '../firebaseUrl';
+
+
 export class App extends Component {
+
+ componentDidMount(){
+  console.log('baseURL')
+  console.log(FIREBASE_URL);
+ } 
   render() {
     return (
       <>
@@ -18,6 +27,5 @@ export class App extends Component {
     )
   }
 }
-
 
 export default App

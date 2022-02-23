@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import NavbarComp from '../components/Navbar'
 import { Page } from '../assets/styled'
+import NoteCard from '../components/NoteCard'
+import NoteAdd from '../components/NoteAdd'
+import { Space } from 'antd'
 
 export class Home extends Component {
     static propTypes = {
@@ -12,9 +15,10 @@ export class Home extends Component {
     render() {
         return (
             <>
-                <NavbarComp title='Home' />
+                <NavbarComp title='Google Keep' />
                 <Page>
-                    home
+                <NoteAdd></NoteAdd>
+                <NoteCard></NoteCard>
                 </Page >
             </>
         )

@@ -31,5 +31,5 @@ export const Navbar = styled.div`
 `;
 
 export const Page = styled.div`
-  padding: 0 20px;
+  padding: 50px;
 `;
